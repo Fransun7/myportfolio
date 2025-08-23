@@ -5,7 +5,7 @@ function myHome() {
     <div>
       <div className="bg-black flex justify-center h-[8vh]">
         <div className="bg-neutral-800 w-4/5 text-center flex justify-center rounded-b-sm text-white ">
-          <ul className="flex space-x-2 items-center">
+          <ul className="flex space-x-4 items-center">
             <li>Home</li>
             <li>Project</li>
             <li>About</li>
@@ -26,7 +26,7 @@ function myHome() {
           </button>
         </div>
         <div className="flex justify-center items-center">
-          <div className="w-70 h-70">
+          <div className="w-100 h-35">
             <img
               className="w-full h-full rounded-full object-cover"
               src={pic1}
