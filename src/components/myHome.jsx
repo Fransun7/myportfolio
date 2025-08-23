@@ -1,6 +1,6 @@
 import pic1 from "../assets/Images/pic1.jpg";
 
-function Home() {
+function myHome() {
   return (
     <div>
       <div className="bg-black flex justify-center h-[8vh]">
@@ -35,4 +35,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default myHome;
