@@ -8,7 +8,7 @@ function Projects() {
       </p>
       {/* Project section */}
       <div
-        className="bg-no-repeat bg-cover bg-center mt-6  grid grid-cols-2 gap-20 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 md:gap-9 w-screen overflow-auto p-2 justify-center"
+        className="bg-no-repeat bg-cover bg-center mt-6  grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 md:gap-9 w-screen overflow-auto p-2 justify-center"
         style={{ backgroundImage: `url(${ProjectBg})` }}
       >
 
