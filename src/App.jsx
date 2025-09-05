@@ -7,7 +7,7 @@ import About from "./components/About";
 function App() {
   return (
     <BrowserRouter>
-      <div className=" bg-black h-screen mt-0">
+      <div className=" bg-black h-screen w-screen mt-0">
         <nav className="p-3 gap-4">
           <div className=" flex justify-center h-[8vh]">
             <div className="w-4/5 text-center flex justify-center rounded-b-sm text-black border-4  border-t-0 inset-0 rounded-xl border-cyan-600">
