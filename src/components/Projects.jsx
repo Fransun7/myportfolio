@@ -1,6 +1,8 @@
 import ProjectBg from "../assets/Images/Project-bg.jpg";
 import Project1 from "../assets/Images/Project1.png";
 import Project2 from "../assets/Images/Project2.png";
+import Project3 from "../assets/Images/Project3.png";
+import Project4 from "../assets/Images/Project4.png";
 
 function Projects() {
   return (
@@ -29,7 +31,7 @@ function Projects() {
 
           <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
             <div class="w-46 h-33 bg-sky-300 rounded-2xl">
-              <img src={Project2} alt="" />
+              <img className=" rounded-lg" src={Project2} alt="" />
             </div>
             <div class="">
               <p class="font-extrabold">A Task Manager</p>
@@ -41,7 +43,9 @@ function Projects() {
           </div>
 
           <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-            <div class="w-46 h-33 bg-sky-300 rounded-2xl"></div>
+            <div class="relative w-46 h-33  rounded-lg">
+              <img className="absolute h-full rounded-lg" src={Project3} alt="" />
+            </div>
             <div class="">
               <p class="font-extrabold">Card title</p>
               <p class="">4 popular types of cards in UI design.</p>
@@ -52,7 +56,9 @@ function Projects() {
           </div>
 
           <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-            <div class="w-46 h-33 bg-sky-300 rounded-2xl"></div>
+            <div class="relative w-46 h-33 bg-sky-300 rounded-lg">
+              <img className="absolute object-cover h-full rounded-lg" src={Project4} alt="" />
+            </div>
             <div class="">
               <p class="font-extrabold">Card title</p>
               <p class="">4 popular types of cards in UI design.</p>

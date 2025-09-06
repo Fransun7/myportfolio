@@ -3,6 +3,8 @@ import "./App.css";
 import Home from "./components/myHome";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Contact from "./components/Contact";
+
 
 function App() {
   return (
@@ -33,13 +35,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-
-       
       </div>
     </BrowserRouter>
-
-    
   );
 }
 
