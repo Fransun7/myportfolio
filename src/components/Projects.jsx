@@ -15,13 +15,13 @@ function Projects() {
           - Projects -
         </p>
         {/* Project section */}
-        <div className="mt-6 grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 md:gap-9 w-screen overflow-auto p-2 justify-center">
+        <div className="mt-6 grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 md:gap-9 w-screen overflow-auto p-2 justify-center font-mono">
           <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
             <div class="w-46 h-33 bg-sky-300 rounded-2xl">
               <img src={Project1} alt="" />
             </div>
             <div class="">
-              <p class="font-extrabold">Movie Website</p>
+              <p class="font-extrabold font-roboto-mono">Movie Website</p>
               <p class="">A website that redirects users to movie source.</p>
             </div>
             <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
@@ -34,7 +34,7 @@ function Projects() {
               <img className=" rounded-lg" src={Project2} alt="" />
             </div>
             <div class="">
-              <p class="font-extrabold">A Task Manager</p>
+              <p class="font-extrabold font-roboto-mono">A Task Manager</p>
               <p class="">An essential tool for managing tasks.</p>
             </div>
             <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
@@ -47,8 +47,8 @@ function Projects() {
               <img className="absolute h-full rounded-lg" src={Project3} alt="" />
             </div>
             <div class="">
-              <p class="font-extrabold">Card title</p>
-              <p class="">4 popular types of cards in UI design.</p>
+              <p class="font-extrabold font-roboto-mono">Wallet Landing Page</p>
+              <p class="">A unique wallet landing page.</p>
             </div>
             <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
               See more
@@ -60,8 +60,8 @@ function Projects() {
               <img className="absolute object-cover h-full rounded-lg" src={Project4} alt="" />
             </div>
             <div class="">
-              <p class="font-extrabold">Card title</p>
-              <p class="">4 popular types of cards in UI design.</p>
+              <p class="font-extrabold font-roboto-mono">Cloned Youtube Web </p>
+              <p class="">A cloned youtube website.</p>
             </div>
             <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
               See more
