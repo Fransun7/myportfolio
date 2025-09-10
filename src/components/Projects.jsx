@@ -8,70 +8,151 @@ function Projects() {
   return (
     <div>
       <div
-        className="bg-no-repeat bg-cover bg-center justify-center text-white mt-7 w-screen h-screen rounded-2xl rounded-b-none"
+        className="bg-no-repeat bg-cover bg-center justify-center text-white mt-7 rounded-2xl rounded-b-none items-center pl-2 pr-2"
         style={{ backgroundImage: `url(${ProjectBg})` }}
       >
         <p className="justify-self-center font-story-script text-2xl">
           - Projects -
         </p>
         {/* Project section */}
-        <div className="mt-6 grid grid-cols-2 gap-5 sm:grid-cols-3 sm:gap-6 md:grid-cols-4 md:gap-9 w-screen overflow-auto p-2 justify-center font-mono">
-          <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-            <div class="w-46 h-33 bg-sky-300 rounded-2xl">
-              <img src={Project1} alt="" />
+        <div className="grid grid-cols-2 gap-4 font-mono p-5 justify-center items-center sm:grid-cols-3">
+          {/* card container 1 */}
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Project1}
+                alt=""
+              />
             </div>
-            <div class="">
-              <p class="font-extrabold font-roboto-mono">Movie Website</p>
-              <p class="">A website that redirects users to movie source.</p>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Movie Libary Web App
+              </h1>
             </div>
-            <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
-              See more
-            </button>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>
+                A movie website that redirects to movie downloadable source.
+              </p>
+            </div>
+          </div>
+          {/* Card container 2 */}
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Project2}
+                alt=""
+              />
+            </div>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Task Manager Web App
+              </h1>
+            </div>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>An essential tool suitable for managing task flow.</p>
+            </div>
           </div>
 
-          <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-            <div class="w-46 h-33 bg-sky-300 rounded-2xl">
-              <img className=" rounded-lg" src={Project2} alt="" />
+           {/* Card container 2 */}
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Project2}
+                alt=""
+              />
             </div>
-            <div class="">
-              <p class="font-extrabold font-roboto-mono">A Task Manager</p>
-              <p class="">An essential tool for managing tasks.</p>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Task Manager Web App
+              </h1>
             </div>
-            <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
-              See more
-            </button>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>An essential tool suitable for managing task flow.</p>
+            </div>
           </div>
 
-          <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-            <div class="relative w-46 h-33  rounded-lg">
-              <img className="absolute h-full rounded-lg" src={Project3} alt="" />
+           {/* Card container 2 */}
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Project2}
+                alt=""
+              />
             </div>
-            <div class="">
-              <p class="font-extrabold font-roboto-mono">Wallet Landing Page</p>
-              <p class="">A unique wallet landing page.</p>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Task Manager Web App
+              </h1>
             </div>
-            <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
-              See more
-            </button>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>An essential tool suitable for managing task flow.</p>
+            </div>
           </div>
 
-          <div class="w-50 h-70 bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col items-start  justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
-            <div class="relative w-46 h-33 bg-sky-300 rounded-lg">
-              <img className="absolute object-cover h-full rounded-lg" src={Project4} alt="" />
+           {/* Card container 2 */}
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Project2}
+                alt=""
+              />
             </div>
-            <div class="">
-              <p class="font-extrabold font-roboto-mono">Cloned Youtube Web </p>
-              <p class="">A cloned youtube website.</p>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Task Manager Web App
+              </h1>
             </div>
-            <button class="bg-sky-700 font-extrabold p-2 px-5 rounded-xl hover:bg-sky-500 transition-colors">
-              See more
-            </button>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>An essential tool suitable for managing task flow.</p>
+            </div>
+          </div>
+
+           {/* Card container 2 */}
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Project3}
+                alt=""
+              />
+            </div>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Book Management System Web App
+              </h1>
+            </div>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>A System developed for the book and libary management.</p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* footer */}
-      <footer className="bg-black m-0">
+      <footer className="bg-black">
         <form class=" text-neutral-800 py-2 relative overflow-hidden flex flex-col justify-around w-screen border border-neutral-500 rounded-lg  p-3 px-6">
           <div class="before:absolute before:w-32 before:h-20 before:right-2 before:bg-rose-300 before:-z-10 before:rounded-full before:blur-xl before:-top-12 z-10 after:absolute after:w-24 after:h-24 after:bg-purple-300 after:-z-10 after:rounded-full after:blur after:-top-12 after:-right-6">
             <span class="font-extrabold text-violet-600 text-sm">
