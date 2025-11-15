@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Home from "./components/myHome";
 import Projects from "./components/Projects";
@@ -14,17 +14,41 @@ function App() {
           <div className=" flex justify-center h-[8vh]">
             <div className="w-4/5 text-center flex justify-center rounded-b-sm text-black border-4  border-t-0 inset-0 rounded-xl border-cyan-600">
               <ul className="flex space-x-4 items-center sm:space-x-10 md:space-x-20 font-bold text-white font-roboto">
-                <li className="hover:text-cyan-500">
-                  <Link to="/">Home</Link>
+                <li>
+                <NavLink to="/"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-cyan-500"
+                        : "text-white hover:text-cyan-500"
+                    }>Home</NavLink>
                 </li>
-                <li className="hover:text-cyan-500">
-                  <Link to="/about">About</Link>
+                 
+                <li>
+                  <NavLink to="/about"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-cyan-500"
+                        : "text-white hover:text-cyan-500"
+                    }>About</NavLink>
+                  
                 </li>
-                <li className="hover:text-cyan-500">
-                  <Link to="/projects">Projects</Link>
+
+                <li>
+               <NavLink to="/projects"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-cyan-500"
+                        : "text-white hover:text-cyan-500"
+                    }>Projects</NavLink>
+                  
                 </li>
-                <li className="hover:text-cyan-500">
-                  <Link to="/contact">Contact</Link>
+                <li>
+                  <NavLink to="/contact"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-cyan-500"
+                        : "text-white hover:text-cyan-500"
+                    }>Contact</NavLink>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,8 @@
 import AboutBg from "../assets/Images/About-bg.jpg";
+import aboutpic from "../assets/Images/aboutpic.jpg";
 import pic6 from "../assets/Images/pic6.jpg";
 import pic1 from "../assets/Images/pic1.jpg";
+import upbg from "../assets/Images/upbg.jpg";
 
 function About() {
   return (
@@ -8,22 +10,22 @@ function About() {
       // About me section
       <div
         className="text-white mt-7 w-screen bg-no-repeat bg-cover bg-center rounded-2xl rounded-b-none"
-        style={{ backgroundImage: `url(${AboutBg})` }}
+        style={{ backgroundImage: `url(${upbg})` }}
       >
-        <p className="justify-self-center font-story-script text-2xl  ">
+        <p className="justify-self-center font-story-script text-2xl text-yellow-600 ">
           - About me -
         </p>
         <div className=" mt-6 grid grid-rows-3 ">
           <div className="rounded-2xl  border-b-0 border-r-0 bg-no-repeat bg-cover bg-center justify-center flex flex-col items-center ">
-            <div className="relative rounded-full w-50 h-50 overflow-hidden border-8 border-amber-950">
+            <div className="relative rounded-full w-50 h-50 overflow-hidden border-8 border-white">
               <img
                 className="absolute w-full h-full object-cover"
-                src={pic1}
+                src={aboutpic}
                 alt=""
               />
             </div>
             <div className="mt-4">
-              <button class="bg-amber-950 text-blue-400 border border-blue-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+              <button class="bg-white text-yellow-600 border border-blue-600 border-b-4 font-bold overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
                 <span class="bg-blue-400 shadow-blue-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                 Front-end Web Developer
               </button>
@@ -31,7 +33,8 @@ function About() {
           </div>
 
           <div className="p-4 text-black font-roboto-mono font-bold text-xl row-span-2 ">
-            <p className="">
+            <div className="p-3 rounded-md">
+              <p className="">
               "My journey into web development began with a simple curosity:
               'How does this work?' That question led me down a rabbit hole of
               code, and i discovered the immense satisfaction of building
@@ -40,17 +43,19 @@ function About() {
             </p>
 
             <p className="mt-5">
-              "As a <span class="text-amber-950">front-end developer</span>, I
-              am a problem-solver and a creator. I love using{" "}
-              <span class="text-amber-950">HTML,CSS</span>, and
-              <span class="text-amber-950">TailwindCSS</span> to bring static
+              "As a <span class="text-yellow-600">front-end developer</span>, I am a
+              problem-solver and a creator. I love using{" "}
+              <span class="text-yellow-600">HTML,CSS</span>, and
+              <span class="text-yellow-600">TailwindCSS</span> to bring static
               designs to life, and i leverage{" "}
-              <span class="text-amber-950">React</span> and{" "}
-              <span class="text-amber-950">JavaScript</span> to build dynamic,
+              <span class="text-yellow-600">React</span> and{" "}
+              <span class="text-yellow-600">JavaScript</span> to build dynamic,
               interactive interfaces that feel fast intuitive. Every line of
               code i write is a step toward user experience. I am always excited
               to learn, grow, and build something new."
             </p>
+            </div>
+            
             <div className="mt-30 flex justify-center">
               <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
                 <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>

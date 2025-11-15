@@ -123,7 +123,7 @@ function Contact() {
               <div className="flex items-center justify-center mt-4">
                 <a href="https://wa.me/2349137929760?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank" // Opens the link in a new tab
                 rel="noopener noreferrer" // Security best practice
-                className="inline-flex items-center text-cyan-600 hover:text-cyan-400 transition-colors duration-300 font-mono"> <span>You can also contact me on <span className="text-white hover:text-cyan-900">Whatsapp</span></span>
+                className="inline-flex items-center text-cyan-600 hover:text-cyan-400 transition-colors duration-300 font-mono"> <span>You can also contact me on <span></span> <span className="text-green-500 hover:text-white">Whatsapp</span></span>
                 </a>
               </div>
             </form>
