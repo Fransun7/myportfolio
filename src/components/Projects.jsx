@@ -4,21 +4,23 @@ import Project2 from "../assets/Images/Project2.png";
 import Project3 from "../assets/Images/Project3.png";
 import Project4 from "../assets/Images/Project4.png";
 import quiz from "../assets/Images/quiz app.png"; 
+import bg1 from "../assets/Images/bg1.jpg";
+
 
 function Projects() {
   return (
     <div>
       <div
         className="bg-no-repeat bg-cover bg-center justify-center text-white mt-7 rounded-2xl rounded-b-none items-center pl-2 pr-2"
-        style={{ backgroundImage: `url(${ProjectBg})` }}
+        style={{ backgroundImage: `url(${bg1})` }}
       >
-        <p className="justify-self-center font-story-script text-2xl">
-          - Projects -
+        <p className="justify-self-center font-story-script text-3xl font-bold text-cyan-500">
+          Projects 
         </p>
         {/* Project section */}
         <div className="grid grid-cols-2 gap-4 font-mono p-5 justify-center items-center sm:grid-cols-3">
           {/* card container 1 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden">
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-xl hover:shadow-sky-400 transition-shadow overflow-hidden">
             {/* image container */}
             <div className="w-full border-2 border-black rounded-xl overflow-hidden">
               <img
@@ -64,49 +66,9 @@ function Projects() {
             </div>
           </div>
 
-           {/* Card container 2 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Project2}
-                alt=""
-              />
-            </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Task Manager Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>An essential tool suitable for managing task flow.</p>
-            </div>
-          </div>
+          
 
-           {/* Card container 2 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Project2}
-                alt=""
-              />
-            </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Task Manager Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>An essential tool suitable for managing task flow.</p>
-            </div>
-          </div>
+           
 
            {/* Card container 2 */}
           <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">

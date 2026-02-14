@@ -3,6 +3,7 @@ import aboutpic from "../assets/Images/aboutpic.jpg";
 import pic6 from "../assets/Images/pic6.jpg";
 import pic1 from "../assets/Images/pic1.jpg";
 import upbg from "../assets/Images/upbg.jpg";
+import bg1 from "../assets/Images/bg1.jpg";
 
 function About() {
   return (
@@ -10,10 +11,10 @@ function About() {
       // About me section
       <div
         className="text-white mt-7 w-screen bg-no-repeat bg-cover bg-center rounded-2xl rounded-b-none"
-        style={{ backgroundImage: `url(${upbg})` }}
+        style={{ backgroundImage: `url(${bg1})` }}
       >
-        <p className="justify-self-center font-story-script text-2xl text-yellow-600 ">
-          - About me -
+        <p className="justify-self-center font-story-script text-3xl text-cyan-500 font-bold">
+          About me 
         </p>
         <div className=" mt-6 grid grid-rows-3 ">
           <div className="rounded-2xl  border-b-0 border-r-0 bg-no-repeat bg-cover bg-center justify-center flex flex-col items-center ">
@@ -25,17 +26,17 @@ function About() {
               />
             </div>
             <div className="mt-4">
-              <button class="bg-white text-yellow-600 border border-blue-600 border-b-4 font-bold overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+              <button class="bg-white text-cyan-500 border border-cyan-600 border-b-4 font-bold overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
                 <span class="bg-blue-400 shadow-blue-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                 Front-end Web Developer
               </button>
             </div>
           </div>
 
-          <div className="p-4 text-black font-roboto-mono font-bold text-xl row-span-2 ">
-            <div className="p-3 rounded-md">
+          <div className="p-4 text-black font-roboto-mono font-medium text-xl row-span-2 ">
+            <div className="p-3 rounded-md bg-gray-300">
               <p className="">
-              "My journey into web development began with a simple curosity:
+              "My journey into <span className="font-bold">web development</span> began with a simple curosity:
               'How does this work?' That question led me down a rabbit hole of
               code, and i discovered the immense satisfaction of building
               something from nothing. I've since dedicated myself to mastering
@@ -43,13 +44,13 @@ function About() {
             </p>
 
             <p className="mt-5">
-              "As a <span class="text-yellow-600">front-end developer</span>, I am a
+              "As a <span class="font-bold">front-end developer</span>, I am a
               problem-solver and a creator. I love using{" "}
-              <span class="text-yellow-600">HTML,CSS</span>, and
-              <span class="text-yellow-600">TailwindCSS</span> to bring static
+              <span class="font-bold">HTML,CSS</span>, and
+              <span class="font-bold">TailwindCSS</span> to bring static
               designs to life, and i leverage{" "}
-              <span class="text-yellow-600">React</span> and{" "}
-              <span class="text-yellow-600">JavaScript</span> to build dynamic,
+              <span class="font-bold">React</span> and{" "}
+              <span class="font-bold">JavaScript</span> to build dynamic,
               interactive interfaces that feel fast intuitive. Every line of
               code i write is a step toward user experience. I am always excited
               to learn, grow, and build something new."
@@ -58,7 +59,7 @@ function About() {
             
             <div className="mt-30 flex justify-center">
               <button class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
-                <span class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                <span class="absolute inset-0 rounded-xl bg-linear-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
 
                 <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
                   <div class="relative z-10 flex items-center space-x-2">
@@ -87,7 +88,8 @@ function About() {
             </div>
           </div>
         </div>
-        {/* footer */}
+      
+        {/* footer 
         <footer className="bg-black m-0">
           <form class=" text-neutral-800 py-2 relative overflow-hidden flex flex-col justify-around w-screen border border-neutral-500 rounded-lg  p-3 px-6">
             <div class="before:absolute before:w-32 before:h-20 before:right-2 before:bg-rose-300 before:-z-10 before:rounded-full before:blur-xl before:-top-12 z-10 after:absolute after:w-24 after:h-24 after:bg-purple-300 after:-z-10 after:rounded-full after:blur after:-top-12 after:-right-6">
@@ -113,6 +115,9 @@ function About() {
             </div>
           </form>
         </footer>
+        */}
+        
+      
       </div>
     </div>
   );
