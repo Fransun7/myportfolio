@@ -3,6 +3,7 @@ import Project1 from "../assets/Images/Project1.png";
 import Project2 from "../assets/Images/Project2.png";
 import Project3 from "../assets/Images/Project3.png";
 import Project4 from "../assets/Images/Project4.png";
+import quiz from "../assets/Images/quiz app.png"; 
 
 function Projects() {
   return (
@@ -36,6 +37,7 @@ function Projects() {
             <div className="mt-1">
               <p>
                 A movie website that redirects to movie downloadable source.
+                <a href="https://quiz-app-wlnd.vercel.app/" className="text-cyan-500 hover:text-cyan-400">View Project</a>
               </p>
             </div>
           </div>
@@ -45,19 +47,20 @@ function Projects() {
             <div className="w-full border-2 border-black rounded-xl overflow-hidden">
               <img
                 className="object-cover w-full h-full"
-                src={Project2}
+                src={quiz}
                 alt=""
               />
             </div>
             {/* Title Box */}
             <div className="mt-1">
               <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Task Manager Web App
+                Quiz Web App
               </h1>
             </div>
             {/* Description Box */}
             <div className="mt-1">
-              <p>An essential tool suitable for managing task flow.</p>
+              <p>An easy-to-use quiz web application.</p>
+              <a href="https://quiz-app-zeta-sooty.vercel.app/" className="text-cyan-500 hover:text-cyan-400">View Project</a>
             </div>
           </div>
 
