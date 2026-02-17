@@ -1,9 +1,9 @@
 import ProjectBg from "../assets/Images/Project-bg.jpg";
 import Project1 from "../assets/Images/Project1.png";
-import Project2 from "../assets/Images/Project2.png";
-import Project3 from "../assets/Images/Project3.png";
-import Project4 from "../assets/Images/Project4.png";
-import quiz from "../assets/Images/quiz app.png"; 
+import Projecct2 from "../assets/Images/quiz app.png"; 
+import Project3 from "../assets/Images/Project2.png";
+import Project4 from "../assets/Images/Project3.png";
+import Projecct5 from "../assets/Images/project5.png"; 
 import bg1 from "../assets/Images/bg1.jpg";
 
 
@@ -49,7 +49,7 @@ function Projects() {
             <div className="w-full border-2 border-black rounded-xl overflow-hidden">
               <img
                 className="object-cover w-full h-full"
-                src={quiz}
+                src={Projecct2}
                 alt=""
               />
             </div>
@@ -76,7 +76,7 @@ function Projects() {
             <div className="w-full border-2 border-black rounded-xl overflow-hidden">
               <img
                 className="object-cover w-full h-full"
-                src={Project2}
+                src={Project3}
                 alt=""
               />
             </div>
@@ -98,7 +98,7 @@ function Projects() {
             <div className="w-full border-2 border-black rounded-xl overflow-hidden">
               <img
                 className="object-cover w-full h-full"
-                src={Project3}
+                src={Project4}
                 alt=""
               />
             </div>
@@ -113,10 +113,32 @@ function Projects() {
               <p>A System developed for the book and libary management.</p>
             </div>
           </div>
+
+          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
+            {/* image container */}
+            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
+              <img
+                className="object-cover w-full h-full"
+                src={Projecct5}
+                alt=""
+              />
+            </div>
+            {/* Title Box */}
+            <div className="mt-1">
+              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                Weather Web App
+              </h1>
+            </div>
+            {/* Description Box */}
+            <div className="mt-1">
+              <p>An easy-to-use weather web application.</p>
+              <a href="https://weather-app-omega-jade-89.vercel.app/" className="text-cyan-500 hover:text-cyan-400">View Project</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* footer */}
+      {/* footer 
       <footer className="bg-black">
         <form class=" text-neutral-800 py-2 relative overflow-hidden flex flex-col justify-around w-screen border border-neutral-500 rounded-lg  p-3 px-6">
           <div class="before:absolute before:w-32 before:h-20 before:right-2 before:bg-rose-300 before:-z-10 before:rounded-full before:blur-xl before:-top-12 z-10 after:absolute after:w-24 after:h-24 after:bg-purple-300 after:-z-10 after:rounded-full after:blur after:-top-12 after:-right-6">
@@ -142,6 +164,7 @@ function Projects() {
           </div>
         </form>
       </footer>
+      */}
     </div>
   );
 }
