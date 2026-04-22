@@ -58,17 +58,17 @@ function Projects() {
   };
   return (
     <div className="">
-      <div className="bg-white bg-no-repeat bg-cover bg-center justify-center text-yellow-500 mt-7 rounded-2xl rounded-b-none items-center pl-2 pr-2 h-screen">
+      <div className="bg-white bg-no-repeat bg-cover bg-center justify-center mt-7 rounded-2xl rounded-b-none items-center pl-2 pr-2 h-screen">
         <p className="justify-self-center font-story-script text-3xl font-bold text-cyan-500">
           Projects
         </p>
 
         {/* grid container */}
-        <div className="grid grid-cols-2 gap-4 font-mono p-5 justify-center items-center sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 font-mono p-5 justify-center items-center sm:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="w-50% h-70 bg-neutral-800 rounded-2xl text-red-700 p-2 flex flex-col hover:bg-gray-900 hover:shadow-xl hover:shadow-sky-400 transition-shadow overflow-hidden"
+              className="w-50% h-70 bg-neutral-800 rounded-2xl p-2 flex flex-col hover:bg-gray-900 hover:shadow-xl hover:shadow-sky-400 transition-shadow overflow-hidden"
             >
               {/* image container */}
               <div className="w-full h-36 border-2 border-black rounded-xl overflow-hidden">
