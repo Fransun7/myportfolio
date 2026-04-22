@@ -1,170 +1,143 @@
-import ProjectBg from "../assets/Images/Project-bg.jpg";
+import { useState } from "react";
 import Project1 from "../assets/Images/Project1.png";
-import Projecct2 from "../assets/Images/quiz app.png"; 
+import Projecct2 from "../assets/Images/quiz app.png";
 import Project3 from "../assets/Images/Project2.png";
 import Project4 from "../assets/Images/Project3.png";
-import Projecct5 from "../assets/Images/project5.png"; 
+import Projecct5 from "../assets/Images/project5.png";
 import bg1 from "../assets/Images/bg1.jpg";
 
+const projects = [
+  {
+    title: "Movie Library Web App",
+    image: Project1,
+    link: "https://quiz-app-wlnd.vercel.app/",
+    description:
+      "A movie website that lets users explore and discover films, with redirects to downloadable movie sources. Built with vanilla JavaScript, HTML, and CSS.",
+  },
+  {
+    title: "Quiz Web App",
+    image: Projecct2,
+    link: "https://quiz-app-zeta-sooty.vercel.app/",
+    description:
+      "A free, open-source practice tool built for Nigerian students preparing for JAMB. Covers Biology, Chemistry, and Physics with score tracking and a wrong-answer review feature. Built with vanilla JavaScript.",
+  },
+  {
+    title: "Task Manager Web App",
+    image: Project3,
+    link: null,
+    description:
+      "An essential productivity tool designed for managing personal and team task flow efficiently. Built with vanilla JavaScript, HTML, and CSS.",
+  },
+  {
+    title: "Book Management System Web App",
+    image: Project4,
+    link: null,
+    description:
+      "A system developed for seamless book and library management, allowing users to track, add, and organize books in a structured interface.",
+  },
+  {
+    title: "Weather Web App",
+    image: Projecct5,
+    link: "https://weather-app-omega-jade-89.vercel.app/",
+    description:
+      "An easy-to-use weather application that fetches and displays real-time weather data based on the user's location or a searched city.",
+  },
+];
 
 function Projects() {
+  const [activeIndex, setActiveIndex] = useState(null);
+  // function for opening description
+  const openDescription = (e, index) => {
+    e.preventDefault();
+    setActiveIndex(index);
+  };
+
+  // function for closing description
+  const closeDescription = (e, index) => {
+    setActiveIndex(null);
+  };
   return (
-    <div>
-      <div
-        className="bg-no-repeat bg-cover bg-center justify-center text-white mt-7 rounded-2xl rounded-b-none items-center pl-2 pr-2"
-        style={{ backgroundImage: `url(${bg1})` }}
-      >
+    <div className="">
+      <div className="bg-white bg-no-repeat bg-cover bg-center justify-center text-yellow-500 mt-7 rounded-2xl rounded-b-none items-center pl-2 pr-2 h-screen">
         <p className="justify-self-center font-story-script text-3xl font-bold text-cyan-500">
-          Projects 
+          Projects
         </p>
-        {/* Project section */}
+
+        {/* grid container */}
         <div className="grid grid-cols-2 gap-4 font-mono p-5 justify-center items-center sm:grid-cols-3">
-          {/* card container 1 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-xl hover:shadow-sky-400 transition-shadow overflow-hidden">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Project1}
-                alt=""
-              />
-            </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Movie Libary Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>
-                A movie website that redirects to movie downloadable source.
-                <a href="https://quiz-app-wlnd.vercel.app/" className="text-cyan-500 hover:text-cyan-400">View Project</a>
-              </p>
-            </div>
-          </div>
-          {/* Card container 2 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Projecct2}
-                alt=""
-              />
-            </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Quiz Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>An easy-to-use quiz web application.</p>
-              <a href="https://quiz-app-zeta-sooty.vercel.app/" className="text-cyan-500 hover:text-cyan-400">View Project</a>
-            </div>
-          </div>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="w-50% h-70 bg-neutral-800 rounded-2xl text-red-700 p-2 flex flex-col hover:bg-gray-900 hover:shadow-xl hover:shadow-sky-400 transition-shadow overflow-hidden"
+            >
+              {/* image container */}
+              <div className="w-full h-36 border-2 border-black rounded-xl overflow-hidden">
+                <img
+                  className="object-cover w-full h-full"
+                  src={project.image}
+                  alt={project.title}
+                />
+              </div>
 
-          
+              {/* Title */}
+              <div className="mt-1">
+                <h1 className="font-bold font-story-script text-cyan-600 text-lg">
+                  {project.title}
+                </h1>
+              </div>
 
-           
+              {/* Description link + View button */}
+              <div className="mt-1 flex flex-col">
+                <a
+                  href=""
+                  className="underline text-neutral-300 hover:text-cyan-400 transition-colors w-fit"
+                  onClick={(e) => openDescription(e, index)}
+                >
+                  Description
+                </a>
 
-           {/* Card container 2 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Project3}
-                alt=""
-              />
+                {project.link && (
+                  <button className="bg-blue-900 border-3 p-2 mt-4 rounded-lg border-cyan-400">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-cyan-500 hover:text-cyan-400"
+                    >
+                      View Project
+                    </a>
+                  </button>
+                )}
+              </div>
             </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Task Manager Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>An essential tool suitable for managing task flow.</p>
-            </div>
-          </div>
-
-           {/* Card container 2 */}
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Project4}
-                alt=""
-              />
-            </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Book Management System Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>A System developed for the book and libary management.</p>
-            </div>
-          </div>
-
-          <div className="w-50% h-70  bg-neutral-800 rounded-2xl text-neutral-300 p-2 flex flex-col  hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow overflow-hidden items-start">
-            {/* image container */}
-            <div className="w-full border-2 border-black rounded-xl overflow-hidden">
-              <img
-                className="object-cover w-full h-full"
-                src={Projecct5}
-                alt=""
-              />
-            </div>
-            {/* Title Box */}
-            <div className="mt-1">
-              <h1 className="font-bold font-story-script text-cyan-600 text-lg">
-                Weather Web App
-              </h1>
-            </div>
-            {/* Description Box */}
-            <div className="mt-1">
-              <p>An easy-to-use weather web application.</p>
-              <a href="https://weather-app-omega-jade-89.vercel.app/" className="text-cyan-500 hover:text-cyan-400">View Project</a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      {/* footer 
-      <footer className="bg-black">
-        <form class=" text-neutral-800 py-2 relative overflow-hidden flex flex-col justify-around w-screen border border-neutral-500 rounded-lg  p-3 px-6">
-          <div class="before:absolute before:w-32 before:h-20 before:right-2 before:bg-rose-300 before:-z-10 before:rounded-full before:blur-xl before:-top-12 z-10 after:absolute after:w-24 after:h-24 after:bg-purple-300 after:-z-10 after:rounded-full after:blur after:-top-12 after:-right-6">
-            <span class="font-extrabold text-violet-600 text-sm">
-              Get more updates...
-            </span>
-            <p class="text-neutral-700 text-sm">
-              Sign up for our newsletter and you'll be the first to find out
-              about new features
+      {activeIndex !== null && (
+        <div
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
+          onClick={closeDescription}
+        >
+          <div
+            className="bg-neutral-800 border border-cyan-700 rounded-2xl p-6 max-w-sm w-full text-neutral-300 font-mono shadow-xl shadow-cyan-900"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 className="text-cyan-500 font-story-script text-xl font-bold mb-3">
+              {projects[activeIndex].title}
+            </h2>
+            <p className="text-sm leading-relaxed text-neutral-300">
+              {projects[activeIndex].description}
             </p>
-          </div>
-          <div class="flex gap-1">
-            <div class="relative rounded-lg w-64 overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg after:absolute after:z-10 after:w-20 after:h-20 after:content[''] after:bg-rose-300 after:right-12 after:top-3 after:rounded-full after:blur-lg">
-              <input
-                type="text"
-                class="relative bg-transparent ring-0 outline-none border border-neutral-500 text-white placeholder-violet-700 text-sm rounded-lg focus:ring-violet-500 placeholder-opacity-60 focus:border-violet-500 block w-full p-2 checked:bg-emerald-500"
-                placeholder="Mail..."
-              />
-            </div>
-            <button class="bg-violet-500 text-neutral-50 p-2 rounded-lg hover:bg-violet-400">
-              Subscribe
+            <button
+              onClick={closeDescription}
+              className="mt-5 bg-blue-900 border border-cyan-400 text-cyan-400 hover:text-cyan-300 px-4 py-2 rounded-lg text-sm transition-colors"
+            >
+              Close
             </button>
           </div>
-        </form>
-      </footer>
-      */}
+        </div>
+      )}
     </div>
   );
 }

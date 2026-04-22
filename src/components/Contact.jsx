@@ -44,7 +44,7 @@ function Contact() {
         "service_2tw97p7",
         "template_lumpw1i",
         Form.current,
-        "Qng7D-nvLnXuYz-b7"
+        "Qng7D-nvLnXuYz-b7",
       )
       .then(
         (result) => {
@@ -57,7 +57,7 @@ function Contact() {
           setNoteText("Failed to send message. Please try again.");
           setNotePopup(true);
           setTimeout(() => setNotePopup(false), 3000);
-        }
+        },
       );
   };
 

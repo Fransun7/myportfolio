@@ -1,0 +1,44 @@
+/* ── Navbar pulsing glow ── */
+@keyframes navPulse {
+  0% {
+    box-shadow:
+      0 0 8px #06b6d4,
+      0 0 20px #06b6d480,
+      0 8px 30px #06b6d440;
+  }
+  50% {
+    box-shadow:
+      0 0 18px #06b6d4,
+      0 0 40px #06b6d4aa,
+      0 10px 50px #06b6d460;
+  }
+  100% {
+    box-shadow:
+      0 0 8px #06b6d4,
+      0 0 20px #06b6d480,
+      0 8px 30px #06b6d440;
+  }
+}
+
+.nav-glow {
+  animation: navPulse 3s ease-in-out infinite;
+}
+
+/* ── Active nav link underline glow ── */
+.nav-link-active {
+  position: relative;
+}
+
+.nav-link-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #22d3ee;
+  box-shadow:
+    0 0 8px #22d3ee,
+    0 0 16px #22d3ee80;
+  border-radius: 999px;
+}
