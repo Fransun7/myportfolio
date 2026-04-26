@@ -5,6 +5,7 @@ import Project3 from "../assets/Images/Project2.png";
 import Project4 from "../assets/Images/Project3.png";
 import Projecct5 from "../assets/Images/project5.png";
 import bg1 from "../assets/Images/bg1.jpg";
+import Project6 from "../assets/Images/agro-connect.png";
 
 const projects = [
   {
@@ -41,6 +42,13 @@ const projects = [
     link: "https://weather-app-omega-jade-89.vercel.app/",
     description:
       "An easy-to-use weather application that fetches and displays real-time weather data based on the user's location or a searched city.",
+  },
+  {
+    title: "AgroConnect Web App",
+    image: Project6,
+    link: "https://agro-connect-react.vercel.app/",
+    description:
+      "A digital marketplace for agricuture products where consumers, vendors, buyers meet farmers for sale of produce without stress. This web app is built with React.Js and TailwindCSS",
   },
 ];
 
